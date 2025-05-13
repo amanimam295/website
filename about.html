@@ -1,0 +1,121 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me - Aman</title>
+  <style>
+    body {
+      background: linear-gradient(to right, black, #00cfff);
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      box-shadow: 0 2px 10px #00cfff;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      animation: slideDown 1s ease-out;
+    }
+    .navbar a {
+      color: #00f7ff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+      transition: 0.3s;
+      position: relative;
+    }
+    .navbar a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #00cfff;
+      left: 0;
+      bottom: -5px;
+      transition: 0.4s;
+    }
+    .navbar a:hover::after {
+      width: 100%;
+    }
+    @keyframes slideDown {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(0); }
+    }
+    .about-section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    h1 {
+      font-size: 48px;
+      color: #00cfff;
+      text-shadow: 0 0 15px #00f7ff;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      color: #b0e0ff;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .highlight {
+      color: #00ffea;
+      font-weight: bold;
+    }
+    .card {
+      margin-top: 50px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 2px solid #00cfff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 15px #00f7ff;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #00cfff; }
+      50% { box-shadow: 0 0 20px #00f7ff; }
+      100% { box-shadow: 0 0 10px #00cfff; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="about-section">
+    <h1>About Me</h1>
+
+    <div class="card">
+      <p>Hello! I'm <span class="highlight">Aman</span>, a passionate <span class="highlight">Web Developer</span> and <span class="highlight">Gamer</span> based in India.  
+      I specialize in <span class="highlight">Website Designing</span>, <span class="highlight">Coding</span>, and love creating amazing digital experiences.</p>
+
+      <br>
+
+      <p>When I'm not coding, you'll find me playing games, learning new tech skills, or brainstorming cool project ideas!</p>
+
+      <br>
+
+      <p>My goal is to keep growing, innovating, and making technology beautiful and accessible for everyone.</p>
+    </div>
+
+  </div>
+
+
+</body></html>

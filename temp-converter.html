@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Celsius to Fahrenheit Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .converter {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    input {
+      width: 150px;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="converter">
+    <h2>Celsius to Fahrenheit</h2>
+    <input type="number" id="celsius" placeholder="Enter °C">
+    <br>
+    <button onclick="convert()">Convert</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function convert() {
+      const celsius = parseFloat(document.getElementById('celsius').value);
+      if (isNaN(celsius)) {
+        document.getElementById('result').innerText = "Please enter a valid number.";
+        return;
+      }
+      const fahrenheit = (celsius * 9 / 5) + 32;
+      document.getElementById('result').innerText = `${celsius}°C = ${fahrenheit.toFixed(2)}°F`;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Aman</title>
+  <style>
+    body {
+      background: linear-gradient(to right, black, #00cfff);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      box-shadow: 0 2px 10px #00cfff;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      animation: slideDown 1s ease-out;
+    }
+    .navbar a {
+      color: #00f7ff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+      transition: 0.3s;
+      position: relative;
+    }
+    .navbar a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #00cfff;
+      left: 0;
+      bottom: -5px;
+      transition: 0.4s;
+    }
+    .navbar a:hover::after {
+      width: 100%;
+    }
+    @keyframes slideDown {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(0); }
+    }
+    .project-section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    h1 {
+      font-size: 48px;
+      color: #00cfff;
+      text-shadow: 0 0 15px #00f7ff;
+      margin-bottom: 20px;
+    }
+    .project-card {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 12px;
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 500px;
+      box-shadow: 0 0 15px #00f7ff;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #00cfff; }
+      50% { box-shadow: 0 0 25px #00f7ff; }
+      100% { box-shadow: 0 0 10px #00cfff; }
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      font-size: 20px;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #b0e0ff;
+      text-shadow: 0 0 10px #00f7ff;
+      transition: color 0.3s ease-in-out;
+    }
+    ul li:hover {
+      color: #00ffea;
+      text-shadow: 0 0 15px #00cfff;
+    }
+    .highlight {
+      color: #00ffea;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="project-section">
+    <h1>My Projects</h1>
+
+    <div class="project-card">
+      <h2 class="highlight">1. Basic Calculator</h2>
+      <p>A simple, user-friendly calculator for basic arithmetic operations. This project helped me improve my skills in basic HTML, CSS, and JavaScript.</p>
+      <ul>
+        <li>Technologies used: <span class="highlight">HTML, CSS, JavaScript</span></li>
+        <li>Features: <span class="highlight">Basic math operations, clear/reset option</span></li>
+        <li>Link: <a href="calculator.html" class="highlight" target="_blank">View Project</a></li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h2 class="highlight">2. Celsius to Fahrenheit Converter</h2>
+      <p>This project converts temperature values between Celsius and Fahrenheit. It taught me more about form handling and JavaScript functions.</p>
+      <ul>
+        <li>Technologies used: <span class="highlight">HTML, JavaScript</span></li>
+        <li>Features: <span class="highlight">Convert temperature, reset option</span></li>
+        <li>Link: <a href="temp-converter.html" class="highlight" target="_blank">View Project</a></li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h2 class="highlight">3. E-Commerce Website</h2>
+      <p>A mock-up of an e-commerce site, showcasing product details and implementing basic shopping cart functionalities. This was my first experience in website development.</p>
+      <ul>
+        <li>Technologies used: <span class="highlight">HTML, CSS, JavaScript</span></li>
+        <li>Features: <span class="highlight">Product listing, cart system</span></li>
+        <li>Link: <a href="ecommerce.html" class="highlight" target="_blank">View Project</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+</body></html>
