@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact Aman via email, phone, or LinkedIn. Send a message using the contact form." />
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Me - Aman</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
       background: linear-gradient(to right, black, #00cfff);
@@ -15,7 +11,6 @@
       color: white;
       overflow-x: hidden;
     }
-
     .content {
       max-width: 800px;
       margin: 50px auto;
@@ -25,12 +20,10 @@
       box-shadow: 0 0 20px #00cfff, 0 0 30px #00cfff inset;
       animation: popIn 1.5s ease-out;
     }
-
     @keyframes popIn {
       0% { transform: scale(0.8); opacity: 0; }
       100% { transform: scale(1); opacity: 1; }
     }
-
     h1 {
       text-align: center;
       font-size: 36px;
@@ -38,30 +31,24 @@
       margin-bottom: 25px;
       text-shadow: 0 0 10px #00cfff;
     }
-
     p {
       font-size: 20px;
       color: #b0e0ff;
       text-align: center;
       margin-bottom: 15px;
     }
-
     form {
       display: flex;
       flex-direction: column;
       gap: 20px;
       padding: 20px 0;
     }
-
     label {
       font-size: 20px;
       color: #00e6e6;
       margin-bottom: 5px;
     }
-
-    input,
-    textarea {
-      width: 100%;
+    input, textarea {
       padding: 12px;
       border: none;
       border-radius: 8px;
@@ -71,13 +58,10 @@
       transition: 0.3s;
       outline: none;
     }
-
-    input:focus,
-    textarea:focus {
+    input:focus, textarea:focus {
       background: rgba(0, 255, 255, 0.2);
       box-shadow: 0 0 12px #00cfff;
     }
-
     input[type="submit"] {
       background-color: #00cfff;
       color: black;
@@ -86,25 +70,17 @@
       font-size: 20px;
       transition: 0.4s;
     }
-
     input[type="submit"]:hover {
       background-color: #00ffff;
       transform: scale(1.05);
       box-shadow: 0 0 15px #00f7ff;
     }
-
     .contact-info {
       margin-top: 30px;
       text-align: center;
     }
-
     .contact-info b {
       color: #00ffea;
-    }
-
-    a {
-      color: #00f7ff;
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -115,20 +91,20 @@
     <div class="contact-info">
       <p><b>Email:</b> aman12142724011@bitcollege.in</p>
       <p><b>Phone Number:</b> +91 81002 64741</p>
-      <p><b>LinkedIn profile:</b>
-        <a href="https://www.linkedin.com/in/aman-imam-b23742225/" target="_blank">Visit my LinkedIn</a>
-      </p>
+      <p><b>LinkedIn profile:</b> 
+  <a href="https://www.linkedin.com/in/aman-imam-b23742225/" target="_blank" style="color: #00f7ff; text-decoration: underline;">Visit my LinkedIn</a>
+</p>
     </div>
 
-    <form action="https://formsubmit.co/aman12142724011@bitcollege.in" method="POST">
+    <form action="mailto:aman12142724011@bitcollege.in" method="post" enctype="text/plain">
       <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required placeholder="you@example.com" />
+      <input type="email" id="email" name="email" required="">
 
       <label for="message">Your Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      <textarea id="message" name="message" rows="5" cols="30" required=""></textarea>
 
-      <input type="submit" value="Send Message" />
+      <input type="submit" value="Send Message">
     </form>
   </div>
-</body>
-</html>
+
+</body></html>
